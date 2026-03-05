@@ -10,4 +10,4 @@ Feature: Login funcional
       | usuario     | password | mensaje             |
       | 15507186-9  | admin    | Welcome             |
       | 15507186-9  | 1234     | Wrong password      |
-      | usuarioX    | admin    | User does not exist |
+      | usuarioX    | admin    | User does not exist|

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Login funcional" tests="3" skipped="0" failures="1" errors="0" timestamp="2026-03-04T18:49:36" hostname="LEON" time="19.603">
+<testsuite name="Login funcional" tests="3" skipped="0" failures="1" errors="0" timestamp="2026-03-05T12:51:30" hostname="CL-BQ31L94" time="22.251">
   <properties/>
-  <testcase name="Validar login con distintos usuarios #1" classname="Login funcional" time="9.225"/>
-  <testcase name="Validar login con distintos usuarios #2" classname="Login funcional" time="5.31"/>
-  <testcase name="Validar login con distintos usuarios #3" classname="Login funcional" time="5.068">
+  <testcase name="Validar login con distintos usuarios #1" classname="Login funcional" time="14.423"/>
+  <testcase name="Validar login con distintos usuarios #2" classname="Login funcional" time="4.072"/>
+  <testcase name="Validar login con distintos usuarios #3" classname="Login funcional" time="3.756">
     <failure message="java.lang.AssertionError" type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:87)
 	at org.junit.Assert.assertTrue(Assert.java:42)
 	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepdefinitions.LoginSteps.verificarMensaje(LoginSteps.java:46)
-	at ✽.el sistema muestra el mensaje &quot;User does not exist&quot;(file:///C:/Users/EPRH1/Documents/SeleniumJava/CucumberGradleProject/src/test/resources/features/login.feature:7)
+	at stepdefinitions.LoginSteps.verificarMensaje(LoginSteps.java:37)
+	at ✽.el sistema muestra el mensaje &quot;User does not exist&quot;(file:///C:/Users/priveraherrera/OneDrive%20-%20Getronics/Documentos/BiceProject/pruebaBice/src/test/resources/features/login.feature:7)
 </failure>
   </testcase>
   <system-out><![CDATA[
@@ -31,21 +31,21 @@ Scenario Outline: Validar login con distintos usuarios         # src/test/resour
 	at org.junit.Assert.fail(Assert.java:87)
 	at org.junit.Assert.assertTrue(Assert.java:42)
 	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepdefinitions.LoginSteps.verificarMensaje(LoginSteps.java:46)
-	at âœ½.el sistema muestra el mensaje "User does not exist"(file:///C:/Users/EPRH1/Documents/SeleniumJava/CucumberGradleProject/src/test/resources/features/login.feature:7)
+	at stepdefinitions.LoginSteps.verificarMensaje(LoginSteps.java:37)
+	at ✽.el sistema muestra el mensaje "User does not exist"(file:///C:/Users/priveraherrera/OneDrive%20-%20Getronics/Documentos/BiceProject/pruebaBice/src/test/resources/features/login.feature:7)
 
 ]]></system-out>
-  <system-err><![CDATA[mar. 04, 2026 3:49:38 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 145
-mar. 04, 2026 3:49:38 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 145.0.7632.117. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-mar. 04, 2026 3:49:47 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 145
-mar. 04, 2026 3:49:47 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 145.0.7632.117. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-mar. 04, 2026 3:49:52 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 145
-mar. 04, 2026 3:49:52 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 145.0.7632.117. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  <system-err><![CDATA[mar. 05, 2026 9:51:32 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 145
+mar. 05, 2026 9:51:32 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 145.0.7632.119. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+mar. 05, 2026 9:51:45 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 145
+mar. 05, 2026 9:51:45 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 145.0.7632.119. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+mar. 05, 2026 9:51:49 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 145
+mar. 05, 2026 9:51:49 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 145.0.7632.119. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
 </testsuite>

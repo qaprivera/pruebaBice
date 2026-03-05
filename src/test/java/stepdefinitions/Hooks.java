@@ -4,6 +4,7 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Hooks {
 
@@ -13,6 +14,7 @@ public class Hooks {
     public void iniciarDriver() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
+        driver.get("https://demoblaze.com");
     }
 
     @After

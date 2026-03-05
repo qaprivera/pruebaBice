@@ -3,14 +3,16 @@ package pages;
 
 import base.BasePage;
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 
 public class LoginPage extends BasePage {
     private By loginLink = By.id("login2");
-
-    private By usernameInput = By.id("loginusername");
+    private By usernameInput = By.cssSelector("input[type='text'][class='form-control'][id='loginusername']");
+  // private By usernameInput = By.id("loginusername");
     private By passwordInput = By.id("loginpassword");
     private By loginButton = By.xpath("//button[text()='Log in']");
+    private By nameUser = By.id("nameofuser");
 
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -28,4 +30,10 @@ public class LoginPage extends BasePage {
     public void clickLogin(){
         click(loginButton);
     }
+    public String validarMensaje(String mensaje){
+    try{
+        return getAlertText();
+    }catch(TimeoutException e){
+        return  getText(nameUser);
+    }}
 }

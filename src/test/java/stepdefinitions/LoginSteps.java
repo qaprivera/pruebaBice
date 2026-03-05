@@ -18,9 +18,6 @@ public class LoginSteps {
     public void abrirLogin() {
 
         driver = Hooks.driver;
-
-        driver.get("https://demoblaze.com");
-
         loginPage = new LoginPage(driver);
     }
 
@@ -36,29 +33,7 @@ public class LoginSteps {
     @Then("el sistema muestra el mensaje {string}")
     public void verificarMensaje(String mensajeEsperado) {
 
-        try {
-
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
-            Alert alert = wait.until(ExpectedConditions.alertIsPresent());
-
-            String textoAlert = alert.getText();
-
-            Assert.assertTrue(textoAlert.contains(mensajeEsperado));
-
-            alert.accept();
-
-        } catch (TimeoutException e) {
-
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
-            WebElement welcome = wait.until(
-                    ExpectedConditions.visibilityOfElementLocated(By.id("nameofuser"))
-            );
-
-            String textoWelcome = welcome.getText();
-
-            Assert.assertTrue(textoWelcome.contains("Welcome"));
-
-        }
+       String msj = loginPage.validarMensaje(mensajeEsperado).trim();
+       Assert.assertTrue(msj.contains(mensajeEsperado));
     }
 }
