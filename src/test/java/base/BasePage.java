@@ -1,10 +1,7 @@
 
 package base;
 
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -90,4 +87,33 @@ public class BasePage {
         alert.accept();
         return texto;
     }
+
+    public void printDOM() {
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        // Esperar a que React genere contenido dentro de #root
+        for(int i = 0; i < 10; i++) {
+            String inner = (String) js.executeScript(
+                    "return document.querySelector('#root').innerHTML;"
+            );
+
+            if(inner != null && !inner.trim().isEmpty()) {
+                break; // Ya hay contenido REAL
+            }
+
+            try { Thread.sleep(500); } catch (Exception ignored) {}
+        }
+
+        // AHORA recién obtengo el DOM real
+        String realDOM = (String) js.executeScript(
+                "return document.documentElement.outerHTML;"
+        );
+
+        System.out.println(realDOM);
+
+
+
+    }
+
 }

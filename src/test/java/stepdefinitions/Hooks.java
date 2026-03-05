@@ -14,7 +14,7 @@ public class Hooks {
     public void iniciarDriver() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://demoblaze.com");
+        driver.get("https://sucursalvirtual.metrogas.cl/ingreso/ingresar");
     }
 
     @After
