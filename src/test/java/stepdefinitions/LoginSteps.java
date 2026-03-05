@@ -34,7 +34,7 @@ public class LoginSteps {
         loginPage.Login();
         //System.out.println(driver.getPageSource());
         //String textoEsperado = loginPage.validarMensaje();
-        loginPage.DOM();
+        //loginPage.DOM();
         //String textoActual = "Este usuario no está registrado en la nueva Sucursal Virtual de Metrogas, para registrarlo, debes dirigirte a: Soy nuevo y no tengo usuario.";
         //Assert.assertEquals(textoActual,textoEsperado);
 
