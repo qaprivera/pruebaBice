@@ -28,15 +28,11 @@ public class LoginSteps {
 
     }
 
-    @Then("hace click en login")
-            public void clickLogin()
-    {
+    @Then("hace click en login y aparece el mensaje {string}")
+    public void clickLogin(String mensaje) {
         loginPage.Login();
-        //System.out.println(driver.getPageSource());
-        //String textoEsperado = loginPage.validarMensaje();
-        //loginPage.DOM();
-        //String textoActual = "Este usuario no está registrado en la nueva Sucursal Virtual de Metrogas, para registrarlo, debes dirigirte a: Soy nuevo y no tengo usuario.";
-        //Assert.assertEquals(textoActual,textoEsperado);
+        String textoActual = loginPage.validarMensaje();
+        Assert.assertEquals(textoActual, mensaje);
 
     }
 }

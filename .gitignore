@@ -1,0 +1,64 @@
+# === Java + Gradle + Cucumber .gitignore ===
+
+# --- Gradle ---
+.gradle/
+build/
+# Mantener Gradle Wrapper en control de versiones
+!gradle/wrapper/**
+!gradlew
+!gradlew.bat
+
+# --- Maven/otros (por si hay target) ---
+target/
+
+# --- Java ---
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*.log
+replay_pid*.log
+
+# --- Cucumber reports & artifacts ---
+# Ajusta si tu salida va a otras rutas
+cucumber-report/
+cucumber-reports/
+reports/
+**/cucumber.json
+**/cucumber.xml
+**/cucumber-html-report/
+.rerun
+rerun.txt
+
+# --- Gradle test reports/results ---
+# (tu status muestra reportes bajo build/)
+**/build/reports/
+**/build/test-results/
+**/build/tmp/
+
+# --- Logs y temporales ---
+*.log
+*.tmp
+*.temp
+*.cache
+
+# --- IDEs/Editors ---
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# --- SO (macOS/Windows) ---
+.DS_Store
+Thumbs.db
+
+# --- Evidencia de pruebas---
+**/screenshots/
+**/videos/

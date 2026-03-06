@@ -10,7 +10,7 @@ public class LoginPage extends BasePage {
     private  By inputEmail = By.cssSelector("input[data-testid='unifiedAuth.form.email']");
     private By inputPassword = By.cssSelector("input[data-testid=\"unifiedAuth.form.password\"]");
     private By buttonIniciarSesion = By.cssSelector("div[class='c0073   styles_textContainer__1uzht undefined']");
-    private By msje = By.cssSelector("div[class=\"c00158 c00159\"][data-testid=\"snackbar.label\"]");
+    private By msje = By.cssSelector("div[data-testid=\"snackbar.label\"]");
 
 
     public LoginPage(WebDriver driver) {
@@ -44,9 +44,7 @@ public class LoginPage extends BasePage {
 
         throw new RuntimeException("No se pudo obtener el mensaje después de 3 reintentos.");
     }
-    public void DOM (){
-        printDOM();
-    }
+
 
 
 }
